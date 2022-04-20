@@ -1,0 +1,74 @@
+{
+	"name": "cli",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint . --ext .js,.ts",
+		"lint-fix": "eslint . --fix --ext .js,.ts",
+		"format": "prettier --write \"bin/**/*.ts\" \"lib/**/*.ts\"",
+		"commit": "git-cz",
+		"start": "ts-node bin/cli.ts",
+		"watch": "tsc -w .",
+		"build": "tsc -p ."
+	},
+	"author": "",
+	"license": "ISC",
+	"bin": {
+		"cli": "bin/cli.js"
+	},
+	"dependencies": {
+		"chalk": "^3.0.0",
+		"commander": "^4.0.1",
+		"didyoumean": "^1.2.2",
+		"download-git-repo": "^3.0.2",
+		"figlet": "^1.2.4",
+		"fs-extra": "^8.1.0",
+		"inquirer": "^7.0.0",
+		"ora": "^4.0.3",
+		"replace": "^1.2.0",
+		"semver": "^7.1.1",
+		"shelljs": "^0.8.4"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.9",
+		"@babel/eslint-parser": "^7.17.0",
+		"@types/fs-extra": "^9.0.13",
+		"@types/inquirer": "^8.2.1",
+		"@types/node": "^17.0.25",
+		"@typescript-eslint/parser": "^5.20.0",
+		"commitizen": "^4.0.3",
+		"cz-customizable": "^6.3.0",
+		"eslint": "^8.13.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.3.8",
+		"prettier": "^2.6.2",
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.3"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-customizable"
+		}
+	},
+	"cz-customizable": {
+		"config": ".cz-config.js"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js}": [
+			"npm run format",
+			"git add"
+		]
+	},
+	"engines": {
+		"node": ">=8.9"
+	}
+}
