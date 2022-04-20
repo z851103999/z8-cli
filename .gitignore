@@ -7,3 +7,4 @@ yarn-error.log*
 /vscode-extension/node_modules
 /vscode-extension/dist
 /vscode-extension/out
+.dist

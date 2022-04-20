@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import * as config from '../package.json'
 import chalk from 'chalk'
-import commander from 'commander'
+import program from 'commander'
 import didYouMean from 'didYouMean'
 import create from '../lib/create'
 import { checkNodeVersion, suggestCommands, enhanceErrorMessages } from '../lib/utils'
@@ -9,7 +9,7 @@ import { checkNodeVersion, suggestCommands, enhanceErrorMessages } from '../lib/
 const requiredVersion = config.engines.node
 didYouMean.threshold = 0.6
 
-const program = new commander.Command()
+// const program = new commander()
 
 /**
  * 检查节点版本要求>=9.0
