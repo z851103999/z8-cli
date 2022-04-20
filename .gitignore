@@ -8,3 +8,4 @@ yarn-error.log*
 /vscode-extension/dist
 /vscode-extension/out
 .dist
+pnpm-lock.yaml

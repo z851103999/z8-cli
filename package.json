@@ -7,7 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint . --ext .js,.ts",
 		"lint-fix": "eslint . --fix --ext .js,.ts",
-		"format": "prettier --write \"bin/**/*.ts\" \"lib/**/*.ts\"",
+		"format": "prettier --write \"bin/**/*.ts\" \"lib/**/*.ts\" \"typings/**/*.ts\"",
 		"commit": "git-cz",
 		"start": "ts-node bin/cli.ts",
 		"watch": "tsc -w .",
@@ -18,6 +18,10 @@
 	"bin": {
 		"cli": "bin/cli.js"
 	},
+	"repository": {
+		"cli": "https://github.com/z851103999/vue-react-cli.git"
+	},
+	"main": "index.js",
 	"dependencies": {
 		"chalk": "^3.0.0",
 		"commander": "^4.0.1",
