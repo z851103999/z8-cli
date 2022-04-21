@@ -76,7 +76,7 @@ const createVueApp = async (projectName: string, targetDir: string) => {
 	// 下载模板
 	downloadFromGithub(vueVersion === 'Vue3' ? REMOTE_URL.VUE3 : REMOTE_URL.VUE2, projectName)
 		.then((res) => {
-			fs.readFile(`./${projectName}/package.json`, 'utf8', function (err, data) {
+			fs.readFile(`./${projectName}/package.json`, 'utf8', function(err, data) {
 				if (err) {
 					spinner.stop()
 					console.error(err)
@@ -88,7 +88,7 @@ const createVueApp = async (projectName: string, targetDir: string) => {
 				packageJson.author = author
 				packageJson.version = version
 				let updatePackageJson = JSON.stringify(packageJson, null, 2)
-				fs.writeFile(`./${projectName}/package.json`, updatePackageJson, 'utf8', function (err) {
+				fs.writeFile(`./${projectName}/package.json`, updatePackageJson, 'utf8', function(err) {
 					spinner.stop()
 					if (err) {
 						console.error(err)

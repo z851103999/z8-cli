@@ -1,6 +1,6 @@
 {
-	"name": "vrvite-cli",
-	"version": "1.0.11",
+	"name": "vrvitecli",
+	"version": "1.0.0",
 	"description": "a cli for createing vue react vite",
 	"main": "index.js",
 	"keywords": [
@@ -18,10 +18,10 @@
 		"watch": "tsc -w .",
 		"build": "tsc -p ."
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "z851103999",
+	"license": "MIT",
 	"bin": {
-		"cli": "bin/vrvite-cli.js"
+		"vrvite": "bin/vrvite-cli.js"
 	},
 	"repository": {
 		"vrvite-cli": "https://github.com/z851103999/vue-react-cli.git"
