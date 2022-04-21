@@ -1,25 +1,30 @@
 {
-	"name": "cli",
-	"version": "1.0.0",
-	"description": "",
+	"name": "vrvite-cli",
+	"version": "1.0.11",
+	"description": "a cli for createing vue react vite",
 	"main": "index.js",
+	"keywords": [
+		"vue-cil",
+		"react-cli",
+		"vite"
+	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint . --ext .js,.ts",
 		"lint-fix": "eslint . --fix --ext .js,.ts",
 		"format": "prettier --write \"bin/**/*.ts\" \"lib/**/*.ts\" \"typings/**/*.ts\"",
 		"commit": "git-cz",
-		"start": "ts-node bin/cli.ts",
+		"start": "ts-node bin/vrvite-cli.ts",
 		"watch": "tsc -w .",
 		"build": "tsc -p ."
 	},
 	"author": "",
 	"license": "ISC",
 	"bin": {
-		"cli": "bin/cli.js"
+		"cli": "bin/vrvite-cli.js"
 	},
 	"repository": {
-		"cli": "https://github.com/z851103999/vue-react-cli.git"
+		"vrvite-cli": "https://github.com/z851103999/vue-react-cli.git"
 	},
 	"main": "index.js",
 	"dependencies": {
@@ -73,6 +78,6 @@
 		]
 	},
 	"engines": {
-		"node": ">=8.9"
+		"node": ">=10"
 	}
 }

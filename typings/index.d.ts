@@ -2,8 +2,8 @@ import { CommanderStatic } from 'commander'
 import { checkNodeVersion, downloadFromGithub } from 'lib/utils'
 import { stringify } from 'querystring'
 
-declare namespace cli {
-	interface Cli {
+declare namespace vrvite {
+	interface VrviteCli {
 		/**
 		 * 检查node版本
 		 */
@@ -31,5 +31,5 @@ declare namespace cli {
 	}
 }
 
-declare const Cli: cli.Cli
-export = Cli
+declare const vrviteCli: vrvite.VrviteCli
+export = vrviteCli
