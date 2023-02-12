@@ -1,12 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  }
+	"compilerOptions": {
+		"outDir": "./lib",
+		"target": "ES6",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"jsx": "preserve",
+		"forceConsistentCasingInFileNames": true,
+		"strict": false,
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules", "dist", "**/*.js", "src/template", "lib"]
 }
