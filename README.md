@@ -1,6 +1,6 @@
 ## b-cli
 
-### vue3-cli 可以创建vue3 vite基础模板
+### vue3cli 可以创建vue3 vite基础模板
 
 1. 默认配置
 
@@ -18,7 +18,14 @@
 - Tailwind
 - Tsx
 
+### 使用
+`b-cli init <app-name>`
+
+### 你也可以用自己模板
+`b-cli create <url>`
+
 ### 未来想要添加功能  
 
-[] React模板
-[] 给Vue3添加Element-Plus
+- [ ] React模板
+- [ ] 给Vue3添加Element-Plus
+
