@@ -1,5 +1,5 @@
 {
-	"name": "b-cli",
+	"name": "z8-cli",
 	"version": "1.0.0",
 	"description": "vue3脚手架",
 	"main": "index.js",
@@ -25,7 +25,7 @@
 	"author": "z851103999",
 	"license": "MIT",
 	"repository": {
-		"b-cli": "https://github.com/z851103999/vue-react-cli.git"
+		"b-cli": "https://github.com/z851103999/z8-cli.git"
 	},
 	"dependencies": {
 		"clear-console": "^1.1.0",
