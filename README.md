@@ -1,4 +1,4 @@
-## b-cli
+## z8-cli
 
 ### vue3cli 可以创建vue3 vite基础模板
 
@@ -19,10 +19,10 @@
 - Tsx
 
 ### 使用
-`b-cli init <app-name>`
+`z8-cli init <app-name>`
 
 ### 你也可以用自己模板
-`b-cli create <url>`
+`z8-cli create <url>`
 
 ### 未来想要添加功能  
 
