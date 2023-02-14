@@ -8,7 +8,7 @@ import { red, green } from 'kolorist'
 
 export const checkConfigJson = () => {
   if (!(cliJson() ?? false)) {
-    console.log(red(`未找到 ${path.join(process.cwd(), 'b-cli.json')}`))
+    console.log(red(`未找到 ${path.join(process.cwd(), 'z8-cli.json')}`))
 
     process.exit(1)
   }

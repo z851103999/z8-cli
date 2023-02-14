@@ -164,11 +164,11 @@ export const userPackageJson = (): any => {
 }
 
 /**
- * 返回用户项目的b-cli.json
+ * 返回用户项目的z8-cli.json
  */
 export const cliJson = (): any => {
-  if (fs.existsSync(path.join(process.cwd(), 'b-cli.json'))) {
-    return require(path.join(process.cwd(), 'b-cli.json'))
+  if (fs.existsSync(path.join(process.cwd(), 'z8-cli.json'))) {
+    return require(path.join(process.cwd(), 'z8-cli.json'))
   } else {
     return false
   }
