@@ -24,7 +24,9 @@
 ### 你也可以用自己模板
 `z8-cli create <url>`
 
-### 未来想要添加功能  
+支持远程模板和本地cli生成模板（需要生成文件夹有z8-cli.json）
+
+### 未来想要添加功能
 
 - [ ] React模板
 - [ ] 给Vue3添加Element-Plus
